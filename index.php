@@ -2,14 +2,23 @@
 
 	require_once("config.php");
 
-		$root = new Usuario();
-		$root -> LoadById(10);
+	// Carrega um Usuario
+	//$root = new Usuario();
+	//$root -> LoadById(10);
+	//echo $root;
 
-		echo $root;
+	// Carrega uma lista de Usuarios
+	//$lista = Usuario::getList();
+	//echo json_encode($lista);
 
-	/*$sql = new Sql();
-	$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+	//Carrega uma lista de busca por login
+	//$search = Usuario::search("v");
+	//echo json_encode($search);
 
-	echo json_encode($usuarios);*/
+	//Carrega usuario usando lofin e senha
+	$usuario = new Usuario();
+	$usuario -> login("vinicius", "15624987");
+
+	echo $usuario;
 
  ?>
