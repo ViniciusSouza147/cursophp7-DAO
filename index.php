@@ -25,10 +25,16 @@
 	//$aluno->insert();
 	//echo $aluno;
 
+	/* Edita registro
 	$usuario = new Usuario();
 	$usuario -> LoadById(20);
 	$usuario->update("linda", "mundo");
+	echo $usuario;*/
 
+	//Deleta registro
+	$usuario = new Usuario();
+	$usuario->LoadById(19);
+	$usuario->delete();
 	echo $usuario;
 
  ?>
