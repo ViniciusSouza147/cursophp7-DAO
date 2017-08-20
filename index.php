@@ -16,8 +16,18 @@
 	//echo json_encode($search);
 
 	//Carrega usuario usando lofin e senha
+	//$usuario = new Usuario();
+	//$usuario -> login("vinicius", "15624987");
+	//echo $usuario;
+
+	//Incluir novo Usuario
+	//$aluno = new Usuario("nana","nasp");
+	//$aluno->insert();
+	//echo $aluno;
+
 	$usuario = new Usuario();
-	$usuario -> login("vinicius", "15624987");
+	$usuario -> LoadById(20);
+	$usuario->update("linda", "mundo");
 
 	echo $usuario;
 
